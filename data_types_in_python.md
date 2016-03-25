@@ -1,14 +1,6 @@
 
 # Overview of Data types in Python
 
-## Data types
-
-Match the data samples with their types.
-
-![datatype exercise](exercises/datatypes.png)
-
-# Definitions
-
 ## Immutable and mutable data types
 
 In Python there are basic and composite data types. The values of basic data types cannot be changed, they are **immutable**. Most of the composite data types are **mutable**.
