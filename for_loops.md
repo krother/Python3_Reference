@@ -1,51 +1,58 @@
-# Definitions
 
-## Loops with for
+# Loops with for
 
-The `for` loop allows you to repeat one or more instructions. It requires a sequence of items that the loop iterates over. This can be e.g. a string. 
+The `for` loop allows you to repeat one or more instructions. To write a `for` loop you need two things: First a **sequence-like object **(e.g. a list, a string, a dictionary or the output of a function producing sequences). Second, a **variable** that takes different values as the loop iterates over the sequence. The variable is easier, because it doesn't matter what name you give it.
 
-Later we will see how you can run `for` loops over other things e.g. a list, a tuple, a dictionary, a file or a function. Some examples:
+Loops with `for` are useful whenever you want to repeat instructions a known number of times, or when you wnat to do something for *all* elements of a sequence. Below you find some examples.
+
+## Loops executing a given number of times
+
+With the `range()` function, you can set the number of iterations easily:
+
+    for i in range(7):
+        print(i)
+
+or using an interval:
+
+    for i in range(10, 17):
+        print(i)
+
+or backwards:
+
+    for i in range(17, 10, -1):
+        print(i)
+
+
+## Loops over a string
+
+With a string as the sequence, you obtain single characters in each iteration.
 
     for char in 'ABCD':
         print(char)
 
-    for i in range(3):
-        print(i)
 
-    for elem in [1,2,3,4]:
+## Loops over a list
+
+A list iterates simply once through each element:
+
+    for elem in [1, 22, 333, 4444, 55555]:
         print(elem)
 
-## When to use for?
 
-* When you want repeat an operation
-# When you want to do something to all characters of a string.
-* When you want to do something to all elements of a list.
-* When you already know the number of iterations.
+## Loops over a dictionary
 
-## Reserved words
+With a dictionary, the `for` loop iterates over the keys. Note that the dictionary is inherently unordered. Theoretically, you could get the keys in a different order each time.
 
-The two words `for` and `in` are also called **reserved words**. They have a special meaning in Python, which means that you cannont call a variable `for` or `in`. There are 33 reserved words in Python 3.
+    pairs = {'Alice': 'Bob', 'Ada': 'Charlie', 'Visual': 'Basic'}
+    for key in pairs:
+        print(key)
+        print(pairs[key])
 
-You can see the complete list with the commands:
+## Indented block
 
-    import keyword
-    keyword.kwlist
+All indented commands after the colon are executed *within* a `for` loop. The first unindented command is executed after the loop finishes.
 
-## Code blocks and indentation
-
-The line with the `for` statement, a **code block** starts. A code block contains one or more line that belong to the `for` and are executed within the loop. Python recognizes this code block by **indentation**, meaning that each line starts with four extra spaces.
-
-Indentation is a central element of Python syntax. Indentation must not be used for decorative purposes.
-
-There are other Python commands that are also followed by code blocks. All of them end with a colon (`:`) at the end of the line.
-
-### Code blocks in the IPython shell
-Define code blocks by indenting extra lines:
-
-    In [1] for i in range(3):
-    ...     print(i)
-    ...
-    0
-    1
-    2
-    In [2]
+    for i in range(5):
+        print('inside')
+        print('also inside')
+    print('outside')
