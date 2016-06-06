@@ -1,7 +1,6 @@
 
-# Definitions
 
-## Conditional statements with `if`
+# Conditional statements with `if`
 
 The `if` statement is used to implement decisions and branching in a program. One or more instructions are only executed if a condition matches:
 
@@ -19,13 +18,16 @@ There must be an `if` block, zero or more `elif`'s and an optional `else` block:
     else:
         studies = '-- not registered yet --'
 
+
 ## Code blocks
 
-After an `for` or `if` statement, all indented commands are treated as a code block, and are executed in the context of the condition.
+After an `if` statement, all indented commands are treated as a code block, and are executed in the context of the condition.
 
 The next unindented command is executed in any case.
 
+
 ## Comparison operators
+
 An `if` expression may contain comparison operators like:
 
     a == b
@@ -39,12 +41,12 @@ On lists and strings you can also use:
 
     a in b
 
-Multiple expressions can be combined with boolean logic:
+Multiple expressions can be combined with boolean logic (`and`, `or`, `not`):
 
     a or b
     a and b
     not a
-    (a or b) and (c or d)
+    (a or b) and not (c or d)
 
 
 ## Boolean value of variables
