@@ -38,8 +38,34 @@ This file can be read with the following simple pattern:
         last = columns[1]
         age = int(columns[2])
 
+This pattern goes through a file line by line (the `for` line). It then chops off the newline character from each line (`strip`) and finally breaks the line into a list of items (`split`).
 
-More sophisticated ways to read tabular information is offered by the Python modules `csv` and `pandas`.
+### The `str.strip()` function
+
+With the string function `strip()`, you chop off whitespace characters (spaces, newline characters and tabs) from both ends of a string. The code:
+
+    text = "  this is text   "
+    s = text.split()
+
+produces:
+
+    print(s)
+    
+    "this is text"
+
+## The `str.split()` function
+
+With the string function `split(x)`, you can divide a string into a list of strings. `x` is the character at which you want to separate the columns (by default it splits on whitespace).
+
+    s = "this is text"
+    t = s.split(" ")
+    print(t)
+
+    ["this", "is", "text"]
+    
+Both `strip()` and `split()` perfectly complement each other.
+
+More sophisticated ways to read tabular information can be found in the Python modules `csv` and `pandas`.
 
 
 ## Writing file and directory names
