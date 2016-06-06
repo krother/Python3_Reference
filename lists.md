@@ -1,7 +1,5 @@
 
-# Definitions
-
-## Lists
+# Lists
 
 A list is a Python data type representing a sequence of elements. You can have lists of strings:
 
@@ -34,6 +32,8 @@ Lists can be sliced by applying square brackets in the same way as strings.
     names[:3]       
     names[-2:]
 
+## Copying a list
+
 You can use slicing to create a copy:
 
     girls = names[:]
@@ -43,6 +43,7 @@ You can use slicing to create a copy:
 Add a new element to the end of the list:
 
     names.append('Marilyn')
+
 
 ## Removing elements from a list
 
@@ -54,15 +55,18 @@ Remove the last element:
 
     names.pop()
 
+
 ## Replacing elements of a list
 
 You can replace individual elements of a list by using an index in an assignment operation:
 
     names[4] = 'Jessica' 
 
+
 ## Sorting a list
 
     names.sort()
+
 
 ## Counting elements
 
