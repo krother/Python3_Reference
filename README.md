@@ -22,4 +22,7 @@ This e-book contains many direct and indirect contributions by Allegra Via, Kaja
 
 Distributed under the conditions of the Creative Commons Attribution Share-alike License 4.0
 
-Sources of this document can be found on []() 
+Sources of this document can be found on [https://www.gitbook.com/book/krother/python-3-reference](https://www.gitbook.com/book/krother/python-3-reference).
+
+**Contributions welcome!**
+ 
