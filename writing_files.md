@@ -1,21 +1,50 @@
 
-# Definitions
+# Writing text files
 
 ## Opening a file for writing
 
-Writing text to files is very similar to reading. The only difference is the `'w'` parameter.
+Writing text to files is very similar to reading. One main difference is that you need to add the `'w'` parameter for *writing*.
 
     f = open('my_file.txt','w')
     f.write(text)
+    f.close()
 
-If your data is a list of strings, it can be written to a file as a one-liner. You only need to add line breaks:
+## Writing a list of strings
+
+If your data is a list of strings, it can be written to a file in one line of code. You only need to take care of adding line breaks at the end of each line:
 
     lines = ['first line\n', 'second line\n']
     open('my_file.txt','w').writelines(lines)
 
+
+## Writing a table to a text file
+
+A straightforward pattern to write multiple columns to a file uses a `for` loop to create lines with separators and newline characters:
+
+    names = ['Emily', 'Bob', 'Charlie']
+    ages = [23, 45, 67]
+
+    f = open('my_file.txt', 'w')
+    for name, age in zip(names, ages):
+        line = "{};{}\n".format(name, age)
+        f.write(line)
+    f.close()
+
+Like with reading, the `csv` and `pandas` offer more sophisticated ways to write tables.
+
+
 ## Appending to a file
 
-It is possible to add text to an existing file, too.
+It is possible to append text to an existing file, too.
 
     f = open('my_file.txt','a')
-    f.write(text)
+    f.write('line appended at the end')
+    f.close()
+
+
+## Closing a file after writing
+
+When writing data, Python *buffers* the data and writes it to the disk with a delay. The writing occurs after the file has been closed, when Python ends or when the buffer runs full. By using `close()` you make sure the data gets written.
+
+    f.close()
+
