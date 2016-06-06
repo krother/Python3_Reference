@@ -4,13 +4,15 @@
 * [General Information on Python 3](background_info.md)
   * [Installing Python](installing_python.md)
   * [The IPython Shell](ipython_shell.md)
+* [Syntax
+  * Operators
+
 * [Data types](data_types_in_python.md)
   * [Variables and Numbers](variables_numbers.md)
-  * [Strings](variables_strings.md)
+  * [Strings](strings.md)
   * [Lists](lists.md)
   * [Tuples](tuples.md)
   * [Dictionaries](dictionaries.md)
-* Operators
 * Input and Output
   * [Writing to the Screen](print.md)
   * [Reading from the Keyboard](input.md)
