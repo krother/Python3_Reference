@@ -1,5 +1,5 @@
 
-# Definitions
+# Basics
 
 ## Variables
 
@@ -18,11 +18,12 @@ The operator `=` is used in Python to define a variable. A Python statement cont
 You may assign to the same variable name twice:
 
     In [1]: emily = 25952
-    In [2]: emily = 25953
+    In [2]: emily = 222
     In [3]: emily
-    Out[3]: ______
+    Out[3]: 222
 
 In this case, the first value is overwritten by the second assignment. There is no way to obtain it afterwards.
+
 
 ## Python Statements
 
@@ -34,4 +35,3 @@ So far, you have seen at least three different kinds of statements:
 * Put a number into a variable
 * Print the number from a variable on the screen
 
-In the next lessons, you will learn to know lots of other statements.
