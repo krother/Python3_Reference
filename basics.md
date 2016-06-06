@@ -1,12 +1,29 @@
 
 # Basics
 
+
+## Python programs
+
+A Python program is simply a text file that contains Python statements. 
+The Python interpreter reads the file and executes the statements line by line.
+
+* All program files should have the extension `.py`
+* Only one command per line is allowed.
+
+### Developing programs on Unix
+
+When developing on Unix, the first line in each Python program should be:
+
+    #!/usr/bin env python3
+
+
 ## Variables
 
 **Variables** are *'named containers'* used to store values within Python. Variable names may be composed of letters, underscores and, after the first position, also digits.
 Lowercase letters are common, uppercase letters are usually used for constants like `PI`.
 
 Variables can be used for calculating in place of the values they contain.
+
 
 ## Variable assignments
 
@@ -35,3 +52,35 @@ So far, you have seen at least three different kinds of statements:
 * Put a number into a variable
 * Print the number from a variable on the screen
 
+## Reserved words
+
+Some words like `import`, `for` and `in` are called **reserved words**. They have a special meaning in Python, which means that you cannont call a variable `for` or `in`. There are 33 reserved words in Python 3.
+
+You can see the complete list with the commands:
+
+    import keyword
+    keyword.kwlist
+
+
+## Code blocks and indentation
+
+In Python, **blocks of code** are defined by indentation. They occur usually after a **control flow statement** (`for`, `if`) or a **structural element** (e.g. a function). A code block contains one or more line that belong to it. Python recognizes this code block by **indentation**, meaning that each line starts with four extra spaces.
+All indented code blocks start with a colon (`:`) at the end of the line.
+
+Indentation is a central element of Python syntax. Indentation must not be used for decorative purposes.
+
+
+## Comments
+
+Comments are lines that are *not* executed. They allow you to document your code to make it easier to read. Also, you can temporarily disable lines of code. There are different ways to write comments:
+
+    # this is a one-line comment
+
+    """This is also a one-line comment"""
+
+    """
+    With triple quotes comments can
+    stretch over multiple lines.
+    """
+
+    '''triple single quotes work like triple double quotes.'''
