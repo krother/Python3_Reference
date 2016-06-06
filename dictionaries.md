@@ -1,139 +1,83 @@
 
 # Dictionaries
 
-## Using a dictionary
+Dictionaries are an unordered, associative array. They have a set of key/value pairs. They are very versatile data structures, but more difficult to use than lists if you are new to Python. As the name implies, dictionaries are good for looking up things, or **searching** in general.
 
-Find out what each of the expressions does to the dictionary in the center.
+## Creating dictionaries
 
-![dict exercise](exercises/dicts.png)
+Python dictionaries are defined with winged brackets. On the left side of each entry is the **key**, on the right side the **value**:
 
-## Definitions
-
-### Dictionaries
-
-Dictionaries are an unordered, associative array. They have a set of key/value pairs. They are very versatile data structures, but slower than lists. Dictionaries can be used easily as a hashtable.
-
-### Creating dictionaries
-
-    prices = {
-        'banana':0.75,
-        'apple':0.55,
-        'orange':0.80
+    ratios = {
+        'Alice': 0.75,
+        'Bob': 0.55,
+        'Charlie': 0.80
         }
 
-### Accessing elements in dictionaries
+## Accessing elements in dictionaries
 
-By applying square brackets with a key inside, the values of a dictionary can be requested. Valid types for keys are strings, integers, floats, and tuples.
+By using square brackets and a key, you can retrieve the values from a dictionary. At least if the key is present:
 
-    print prices['banana']  # 0.75
-    print prices['kiwi']    # KeyError!
-
-### Looping over a dictionary:
-
-You can access the keys of a dictionary in a `for` loop. However, their order is not guaranteed, then.
-
-    for fruit in prices:
-        print fruit
-
-### Methods of dictionaries
-
-There is a number of functions that can be used on every dictionary:
-
-#### Checking whether a key exists:
-
-    prices.has_key('apple')
-
-#### Retrieving values in a fail-safe way:
-
-    prices.get('banana')
-    prices.get('kiwi')
-
-#### Setting values only if they dont exist yet:
-
-    prices.setdefault('kiwi', 0.99)
-    prices.setdefault('banana', 0.99)
-    # for 'banana', nothing happens
-
-#### Getting all keys / values:
-
-    print prices.keys()
-    print prices.values()
-    print prices.items()
+    ratios['Alice']    # 0.75
+    ratios['Ewing']    # KeyError!
 
 
-## Exercises
+## Retrieving values in a fail-safe way:
 
-### Exercise 1. 
+With the `get()` method you can assign an alternative value if the key was not found.
 
-What do the following commands produce?
-
-    d = {1:'A', 'B':1, 'A':True}
-    print(d['A'])
-
-- [ ] `False`
-- [ ] `"B"`
-- [ ] `True`
-- [ ] `1`
-
-### Exercise 2. 
-
-What do these commands produce?
-
-    d = {1:'A', 'B':1, 'A':True}
-    print(d.has_key('B'))
-
-- [ ] `1`
-- [ ] `True`
-- [ ] `"B"`
-- [ ] `False`
-
-### Exercise 3. 
-
-What do these commands produce?
-
-    d = {1:'A', 'B':1, 'A':True}
-    print(d.values())
-
-- [ ] `True`
-- [ ] `['A', 1, True]`
-- [ ] `3`
-- [ ] `[1, 'B', 'A']`
-
-### Exercise 4. 
-
-What do these commands produce?
-
-    d = {1:'A', 'B':1, 'A':True}
-    print(d.keys())
-
-- [ ] `[1, 'B', 'A']`
-- [ ] `['A', 'B', 1]`
-- [ ] `[1, 'A', 'B']`
-- [ ] `The order may vary`
+    ratios.get('Alice')
+    ratios.get('Ewing', 'sorry not found')
 
 
-### Exercise 5. 
+## Changing values in a dictionary
 
-What do these commands produce?
+The contents of a dictionary can be modified. For instance if you start with an empty dictionary:
 
-    d = {1:'A', 'B':1, 'A':True}
-    print(d['C'])
+    persons = {}
 
-- [ ] `None`
-- [ ] `'C'`
-- [ ] `an Error`
-- [ ] `False`
+Now you can add values one key/value pair at a time:
+
+    persons['Emily'] = 1977
 
 
-### Exercise 6. 
+## Setting values only if they dont exist yet:
 
-What do these commands produce?
+    persons.setdefault('Alice', 1980)
+    persons.setdefault('Emily', 1898)
+    # for 'Emily', nothing happens
 
-    d = {1:'A', 'B':1, 'A':True}
-    d.setdefault('C', 3)
-    print(d['C'])
 
-- [ ] `3`
-- [ ] `'C'`
-- [ ] `None`
-- [ ] `an Error`
+## Getting all keys or values:
+
+    ratios.keys()
+    ratios.values()
+    ratios.items()
+
+
+## Checking whether a key exists
+
+The `in` operators checks whether a key exists in the dictionary.
+
+    if 'Bob' in ratios:
+        print('found it')
+
+Note that you can use `in` for the same with a list as well. The dictionary is **much faster**!
+
+
+## Loops over a dictionary
+
+You can access the keys of a dictionary in a `for` loop. 
+
+    for name in ratios:
+        print(name)
+
+However, there is no stable order unless you sort the keys explicitly:
+
+    for name in sorted(ratios):
+        print(name)    
+
+
+#### What data can I use as keys?
+
+Valid types for keys are strings, integers, floats, and tuples. You may mix keys of different type in one dictionary. However, **mutable** data types such as lists and other dictionaries are not allowed as keys.
+
