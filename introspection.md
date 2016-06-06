@@ -1,28 +1,45 @@
 
-# Definitions
+# Introspection
 
-Introspection is a feature of Python by which you can examine objects (including variables, functions, classes, modules) at runtime. 
+Introspection is a feature of Python by which you can examine objects (including variables, functions, classes, modules) inside a running Python environment (a program or shell session). 
 
 ## Exploring the namespace
-In Python classes, functions, modules etc. have separate namespaces. A namespace is the set of attributes of an object. You can explore a namespace with `dir()`:
 
-    print dir()
+In Python all objects (variables, modules, classes, functions and your main program) are boxes called **namespaces**. You can imagine the namespace of an object as the data and functions inside than object. You can explore a namespace with the `dir()` function.
+
+### Exploring the namespace of a variable
+
+With a string object, you see all the string methods:
+
+    s = "Emily"
+    print(dir(s))
+
+### Exploring the namespace of a module:
+
+The same works for a module you import:
+
     import time
-    print dir(time)
-
-## Built-in help
-You can get context-sensitive help to functions, methods and classes that utilize the triple-quoted comments:
-import time
-print help(time.asctime)
+    print(dir(time))
 
 
-## Everything is an Object
-One consequence of the dynamic typing is that Python can treat everything it manages technically in the same way. Everything is an object, meaning it has attributes. These attributes are objects themselves. Methods are simply attributes that can be called. 
+### Listing the builtin functions:
 
-## Each object has a name:
+You also can view all builtin functions:
 
-    print (x.__name__)
+    print(dir(__builtins__))
 
-and a type:
 
-    print (type(x))
+
+## The help function
+
+You can get context-sensitive help to functions, methods and classes with `help()` function.
+
+    import time
+    print help(time.asctime)
+
+`help()` utilizes the triple-quoted comments called **docstrings**, so that documentation you write for your own functions is also availabel through `help()`:
+
+
+## Everything is an object
+
+One consequence of the dynamic typing is that Python can treat everything it manages technically in the same way. **Everything is an object** is a common phrase describing how Python works. There is no fundamental difference between a function and an integer. Many advanced features of Python are built on this concept.
