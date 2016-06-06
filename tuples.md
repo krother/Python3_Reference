@@ -3,27 +3,41 @@
 
 A tuple is a sequence of elements that cannot be modified. They are useful to group elements of different type. 
 
-    t = ('bananas','200g',0.55)
+    person = ('Emily', 'Smith', 23)
 
-In contrast to lists, tuples can also be used as keys in dictionaries.
+In contrast to lists, tuples can also be used as **keys** in dictionaries.
 
 
-# Exercises
+## Indexing tuples
 
-## Exercise 1
+Elements of tuples can be indexed in the same way as lists:
 
-Which are correct tuples?
+   person[0]
+   person[-2]
+   person[1:]
 
-- [ ] `(1, 2, 3)`
-- [ ] `("Jack", "Knife")`
-- [ ] `('blue', [0, 0, 255])`
-- [ ] `[1, "word"]`
 
-## Exercise 2
+## Iterating over tuples
 
-What can you do with tuples?
+You can run a `for` loop over a tuple:
 
-- [ ] `group data of different kind`
-- [ ] `change the values in them`
-- [ ] `run a for loop over them`
-- [ ] `sort them`
+    for elem in person:
+        print(elem)
+
+
+## Packing and unpacking tuples
+
+Enumerating multiple values separated by a comma implictly creates tuples:
+
+    person = 'Emily', 'Smith', 23
+
+
+Tuples can be unpacked to multiple variables:
+
+    first, last, age = person
+
+
+It is even possible to swap the value of variables that way:
+
+    first, last = last, first
+

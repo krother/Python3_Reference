@@ -1,51 +1,51 @@
 
-# Control flow statements
+# Conditional loops with while
 
-Control flow means controlling, which instruction is handled next. In this tutorial, we cover three of Pythons control flow statements: `for`, `if` and `while`.
+Another control flow statement is the **conditional loop** with `while`. While loops combine the properties `for` and `if`. The loop is executed as long as the conditional expression at the beginning holds. The conditional expressions work in exactly the same way as in `if` statements.
 
+## Counting until a certain value
 
-## Conditional loops with while
-
-## Exercise
-Match the expressions so that the `while` loops run the designated number of times.
-
-![while exercise](exercises/while.png)
-
-While loops combine `for` and `if`. They require a conditional expression at the beginning. The conditional expressions work in exactly the same way as in `if.. elif` statements.
+A simple usage of while is to count until an exit condition is met. The following loop calculates the sum of all numbers from 1 through 10:
 
     i = 0
-    while i < 5:
-        print (i)
-        i = i + 1)
+    total = 0
+    while i < 10:
+        print(i)
+        i = i + 1
+        total = total + i
 
 
-### When to use while?
+## Searching through data
 
-* When there is an exit condition.
-* When it may happen that nothing is done at all.
-* When the number of repeats depends on user input.
-* Searching for a particular element in a list.
+With a `while` loop you can perform search operations - although many times the methods on lists and dictionaries will give you a shortcut.
 
-## Exercises
+The following loop finds the first name starting with an `'E'`:
 
-### Exercise 1
+    data = ['Alice', 'Bob', 'Charlie', 'Emily', 'Fred']
+    i = 0
+    while i < len(data) and not data[i].startswith('E'):
+        i += 1
+    print(i)
 
-Which of these `while` commands are correct?
 
-- [ ] `while a = 1:`
-- [ ] `while b == 1`
-- [ ] `while a + 7:`
-- [ ] `while len(c) > 10:`
-- [ ] `while a and (b-2 == c):`
-- [ ] `while s.find('c') >= 0:`
+## Waiting for user input
 
-### Exercise 2
+A `while` loop is also useful to let a user stop the program:
 
-Which statements are correct?
+    number = 0
+    while input('press [Enter] to continue or [x] to exit') != 'x':
+        number = number +1 
+        print(number)
 
-- [ ] `while` is also called a conditional loop
-- [ ] The expression after `while` may contain function calls
-- [ ] It is possible to write endless `while` loops
-- [ ] The colon after `while` may be omitted
-- [ ] The code block after `while` is executed at least once
+
+## Endless loops
+
+With `while` it is possible to build loops that never stop. Most of the time this happens by accident. In the following loop, the instruction to decrease `a` is missing. It runs endlessly:
+
+    a = 10
+    b = 1
+    while a > 0:
+        b = 1 - b
+        print(b)
+        # a = a - 1
 
