@@ -20,26 +20,3 @@ The mutable data types are
 * Dictionary {'name': 'John Smith', 'year': 1990}
 * Set ()
 
-## Type conversions
-
-Values can be converted into each other using *conversion functions*. Try the following:
-
-    int('5.5')
-    float(5)
-    str(5.5)
-    list("ABC")
-    tuple([1,2,3])
-    dict([('A',1),('B',2)])
-    set([1,2,2,3])
-
-# Exercises
-
-## Exercise 1
-
-On which data types does the `len()` function work?
-
-- [ ] lists
-- [ ] dictionaries
-- [ ] strings
-- [ ] floats
-
