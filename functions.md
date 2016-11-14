@@ -35,7 +35,7 @@ Do not use *mutable* default values (e.g. lists and dictionaries) in the functio
 
 For even greater flexibility with function parameters you can also add a list `*args` for an unspecified number of extra parameters, or a dictionary `**kwargs` for keyword parameters. 
 
-    def func(*args, *kwargs):
+    def func(*args, **kwargs):
         print(args[1])
         print(kwargs['a'])
 

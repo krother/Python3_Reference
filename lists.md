@@ -29,7 +29,7 @@ Lists can be sliced by applying square brackets in the same way as strings.
     names = ['Hannah', 'Emily', 'Sarah', 'Maria']
     names[1:3]      
     names[0:2]      
-    names[:3]       
+    names[:3]
     names[-2:]
 
 ## Copying a list

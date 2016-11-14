@@ -13,6 +13,7 @@
   * [Indexing](indexing.md)
 * Input and Output
   * [Writing to the Screen](print.md)
+  * [String formatting](string_formatting.md)
   * [Reading from the Keyboard](input.md)
 * Reading and Writing Files
   * [Reading text files](reading_files.md)
@@ -22,9 +23,17 @@
   * [Conditional statements with if](if.md)
   * [Loops with for](for_loops.md)
   * [Conditional Loops with while](while.md)
-* [Builtin functions](builtin_functions.md)
-* Structuring bigger programs
+* Advanced Data Structures
+  * [Sorting](sorting.md)
+  * [Collection Types]
+* Functions
   * [Functions](functions.md)
+  * [Decorators](decorators.md)
+  * [Generators](generators.md)
+  * [Short functions](lambda_functions.md)
+  * [Builtin functions](builtin_functions.md)
+* Structuring Bigger Programs
   * [Modules and packages](modules.md)
+  * [Handling Exceptions](exceptions.md)
   * [Introspection](introspection.md)
 * [Leftovers](leftovers.md)

@@ -145,14 +145,3 @@ The `zip()` function associates the elements of two lists to a single list or tu
     for fruit, price in zip(fruits, prices): 
         print(fruit, price)
 
-
-
-
-
-
-## Introspection
-
-The introspection functions allow you to examine Python objects (variables, functions, modules) more closely. They are explained in a later chapter.
-
-    dir(x)        type(x)        help(x)
-
