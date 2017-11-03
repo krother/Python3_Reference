@@ -85,7 +85,9 @@ The method returns the start index of the match. The result -1 means that no mat
 
     name.replace('Strings','text')
 
-### Removing whitespace at both ends 
+### Checking beginning and end of a string
+
+Both of the following functions return a boolean:
 
     name.startswith('Man')
     name.endswith('ings') 

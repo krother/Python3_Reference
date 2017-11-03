@@ -40,4 +40,3 @@ We can sort by the second column (index 1) with the `itemgetter` module:
 When we give a tuple of indices, we can sort first by one, then the other column:
 
     cities.sort(key=itemgetter((1, 0)))
-  
