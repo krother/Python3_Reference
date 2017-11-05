@@ -1,5 +1,4 @@
 
-
 # Working with directories
 
 ## Importing the os module

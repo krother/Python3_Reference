@@ -1,8 +1,6 @@
 
 # Collection Types
 
-Python oofers 
-
 ## namedtuple
 
 Namedtuples are helpful to group together items with names.

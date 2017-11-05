@@ -1,5 +1,5 @@
 
-## Decorators
+# Decorators
 
 In general, **decorators are functions that manipulate functions**. 
 More specifically, a decorator wraps a function to manage a function call.

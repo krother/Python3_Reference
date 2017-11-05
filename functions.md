@@ -54,4 +54,3 @@ Multiple values are returned as a tuple.
     return 'banana', 0.75
 
 In any case, the `return` statement ends the execution of a function. Nothing speaks against having multiple `return` statements in a function (although for clarity it should not be too many).
-

@@ -1,7 +1,7 @@
 
 # String
 
-Text values are called **strings**. In Python, strings are defined by single quotes, double quotes or three quotes of either. The following string assignments are equivalent:
+Text values are called **strings**. In Python, strings are defined by single quotes, double quotes, triple-single or triple-double-quotes:
 
     first = 'Emily'
     first = "Emily"
@@ -12,10 +12,13 @@ Text values are called **strings**. In Python, strings are defined by single quo
 
 Some characters in Python require special attention:
 
-* **Newline characters** - writing `\n` into a string stands for the beginning of a new line.
-* **Tabulators** - writing `\t` into a string stands for a tabulator.
-* **Backslashes** - because the backslash (`\`) has a special meaning in the above, you need to write a double backslash (`\\`) to represent a single backslash.
-* **Language-specific characters** - Python 3 stores **Unicode** characters including German Umlauts, Chinese and Arab alphabets by default. However, they may be interpreted in the same way in different environments. Just be a bit careful when using them.
+| character | meaning |
+|-----------|---------|
+| `\n`      | Newline character |
+| `\t`      | tabulator |
+| `\\`      | normal, single backslash |
+
+Additionally, Python 3 encodes **Unicode** characters including German Umlauts, Chinese and Arab alphabets by default. However, they may not be interpreted in the same way in different environments. Just be a bit careful when using them.
 
 ## String concatenation
 

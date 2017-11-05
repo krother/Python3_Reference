@@ -18,3 +18,10 @@ The winged brackets are placeholders for the parameters in the `format` function
 * `{x}` – the x-th parameter.
 * `{:>5s}` – a right-aligned string of width 5.
 * `{:6.2f}` – a float number with 6 digits (2 after the dot).
+
+### Remark
+
+There are two other modes for string formatting:
+
+* strings using a `%` sign - the oldschool way
+* format strings that only exist since Python 3.6

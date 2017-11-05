@@ -32,3 +32,12 @@ The arithmetical symbols like `+ - * /` connecting two numbers are called **oper
 If you perform arithmetics with integer numbers, the result is also an integer. If one of the numbers is a float, the result will also be a float.
 When you perform a division, the result is always a floating-point number.
 
+## Rounding and binary representation 
+
+Occasionally, seemingly simple floating-point calculations will result in strange results, e.g. instead of `0.25` you might see:
+
+    0.250000000000000001
+
+This is related to the underlying binary representation of floating-point numbers. The precision of floats is by default 16 digits, which is enough for most applications (be aware that it might not, if you are doing astrophysics or other high-precision calculations).
+
+(The same happens in all programming languages, but they might round the floats automatically.)

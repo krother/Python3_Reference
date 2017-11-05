@@ -1,7 +1,6 @@
 
 # Basics
 
-
 ## Python programs
 
 A Python program is simply a text file that contains Python statements. 

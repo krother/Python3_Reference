@@ -15,7 +15,6 @@ Then you can write (e.g. in a second Python file in the same directory):
     print(names.FIRST_NAMES)
 
 
-
 ## Packages
 
 For big programs, it is useful to divide up the code among several directories. A directory from which you can import Python modules is called a package. To create a package that Python will recognize you need to create a file `__init__.py` (it may be empty).

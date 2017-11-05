@@ -39,4 +39,3 @@ The functions `int()`, `float()` and `str()` change the type of the given data. 
     dict([('A', 1), ('B', 2)])
     set([1, 2, 2, 3])
 
-

@@ -1,8 +1,18 @@
 
 # Builtin functions
 
-In Python, there is a basic set of about 30 functions called **builtin functions**. Many of them are shortcuts that make your everyday programming a lot easier. Here, the most common ones are summarized, so that you can check your vocabulary.
+In Python, there is a basic set of about 70 functions called **builtin functions**. Many of them are shortcuts that make your everyday programming a lot easier. Here, the 24 most important ones are given. This is your basic vocabulary, knowing these is a must to write Python efficiently!
 
+| function | | | | 
+|----------|-|-|-|
+| int | float | str | list |
+| bool | dict | tuple | set |
+| print | input | open | range |
+| len | sum | abs | round |
+| min | max | sorted | reversed |
+| enumerate | zip | dir | help |
+
+See the topic **introspection** to find out about the other functions.
 
 ## Type Conversions
 

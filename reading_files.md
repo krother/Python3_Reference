@@ -38,7 +38,7 @@ This file can be read with the following simple pattern:
         last = columns[1]
         age = int(columns[2])
 
-This pattern goes through a file line by line (the `for` line). It then chops off the newline character from each line (`strip`) and finally breaks the line into a list of items (`split`).
+This pattern goes through a file line by line (the `for` line). It then chops off the newline character from each line (`strip`) and finally breaks the line into a list of items at the `;` character (`split`).
 
 ### The `str.strip()` function
 
@@ -94,3 +94,9 @@ Closing files in Python is not mandatory but good practice. If you open too many
 
     f.close()
 
+## Reading files with a Context Manager
+
+The modern way to open files in Python is using a **Context Manager** (a code block started by `with`). The `with` statement takes care of closing the file automatically:
+
+    with open('my_file.txt') as f:
+        text = f.read()

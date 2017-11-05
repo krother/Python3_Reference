@@ -38,7 +38,7 @@ Like with reading, the `csv` and `pandas` offer more sophisticated ways to write
 It is possible to append text to an existing file, too.
 
     f = open('my_file.txt','a')
-    f.write('line appended at the end')
+    f.write('line appended at the end\n')
     f.close()
 
 
@@ -48,3 +48,9 @@ When writing data, Python *buffers* the data and writes it to the disk with a de
 
     f.close()
 
+## Writing to a file with a Context Manager
+
+The `with` statement is a **Context Manager** that takes care of closing a file automatically:
+
+    with open('my_file', 'w') as f:
+        f.write('line of text\n')
