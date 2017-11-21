@@ -1,5 +1,5 @@
 
-# Strings
+# String
 
 Text values are called **strings**. In Python, strings are defined by single quotes, double quotes, triple-single or triple-double-quotes:
 

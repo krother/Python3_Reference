@@ -11,6 +11,7 @@
   * [Dictionaries](dictionaries.md)
   * [Type Conversions](type_conversions.md)
   * [Indexing](indexing.md)
+  * [Sorting](sorting.md)
 * Input and Output
   * [Writing to the Screen](print.md)
   * [String formatting](string_formatting.md)
@@ -23,15 +24,12 @@
   * [Conditional statements with if](if.md)
   * [Loops with for](for_loops.md)
   * [Conditional Loops with while](while.md)
-* Advanced Data Structures
-  * [Sorting](sorting.md)
-  * [Collection Types]
 * Functions
+  * [Builtin functions](builtin_functions.md)
   * [Functions](functions.md)
   * [Decorators](decorators.md)
   * [Generators](generators.md)
-  * [Short functions](lambda_functions.md)
-  * [Builtin functions](builtin_functions.md)
+  * [Short functions](lambda.md)
 * Structuring Bigger Programs
   * [Modules and packages](modules.md)
   * [Handling Exceptions](exceptions.md)

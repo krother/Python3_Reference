@@ -1,7 +1,7 @@
 
-# Indexing and Slicing
+# Indexing and slicing
 
-**Computers and people count differently:**
+## Computers and people count differently
 
 ![indices for humans and computers](indexing.png)
 
@@ -57,4 +57,5 @@ The step size may even be negative:
 
     s = 'my fat cat'
     s[::-1]  # -> 'tac taf ym'
+
 
