@@ -3,7 +3,7 @@
 
 Variables and strings can be combined, using formatting characters. This works also within a print statement. In both cases, the number of values and formatting characters must be equal. Here are some examples:
 
-    print('Hello {}%!'.format('Roger'))
+    print('Hello {}!'.format('Roger'))
     print('Result: {4i}'.format(42))
     print('{1:5s} {1:>5s}'.format('one', 'two'))
     print('{2} {1}'.format('one', 'two'))

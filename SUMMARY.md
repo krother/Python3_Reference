@@ -27,9 +27,7 @@
 * Functions
   * [Builtin functions](builtin_functions.md)
   * [Functions](functions.md)
-  * [Decorators](decorators.md)
   * [Generators](generators.md)
-  * [Short functions](lambda.md)
 * Structuring Bigger Programs
   * [Modules and packages](modules.md)
   * [Handling Exceptions](exceptions.md)

@@ -15,14 +15,9 @@ This document is not intended as an in-depth guide. Please refer to [www.python.
 
 ## Acknowledgements 
 
-This e-book contains many direct and indirect contributions by Allegra Via, Kaja Milanowska, Anna Philips, Magdalena Rother and Tomasz Puton.
+This e-book contains contributions by Allegra Via, Kaja Milanowska, Anna Philips, Magdalena Rother and Tomasz Puton.
 
 
 ## License
 
 Distributed under the conditions of the Creative Commons Attribution Share-alike License 4.0
-
-Sources of this document can be found on [https://www.gitbook.com/book/krother/python-3-reference](https://www.gitbook.com/book/krother/python-3-reference).
-
-**Contributions welcome!**
- 
