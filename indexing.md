@@ -13,7 +13,7 @@ This is why the indices used to slice lists are a bit unintuitive at first, e.g.
     >>> s[3:6]
     'fat'
 
-The diagram provides a pracitcal model by which you can deduce indices yourself.
+The diagram provides a practical model by which you can deduce indices yourself.
 
 ## Indexing
 
