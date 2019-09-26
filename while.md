@@ -34,7 +34,7 @@ A `while` loop is also useful to let a user stop the program:
 
     number = 0
     while input('press [Enter] to continue or [x] to exit') != 'x':
-        number = number +1 
+        number = number +1
         print(number)
 
 
@@ -47,5 +47,3 @@ With `while` it is possible to build loops that never stop. Most of the time thi
     while a > 0:
         b = 1 - b
         print(b)
-        # a = a - 1
-

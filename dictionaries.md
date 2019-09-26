@@ -66,7 +66,7 @@ Note that you can use `in` for the same with a list as well. The dictionary is *
 
 ## Loops over a dictionary
 
-You can access the keys of a dictionary in a `for` loop. 
+You can access the keys of a dictionary in a `for` loop.
 
     for name in ratios:
         print(name)
@@ -77,7 +77,14 @@ However, there is no stable order unless you sort the keys explicitly:
         print(name)    
 
 
-#### What data can I use as keys?
+### What data can I use as keys?
 
-Valid types for keys are strings, integers, floats, and tuples. You may mix keys of different type in one dictionary. However, **mutable** data types such as lists and other dictionaries are not allowed as keys.
+Valid types for keys are:
 
+* integers
+* floats
+* strings
+* tuples
+* booleans
+
+You may mix keys of different type in one dictionary. However, **mutable** data types such as lists and other dictionaries are not allowed as keys.

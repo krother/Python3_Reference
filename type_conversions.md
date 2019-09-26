@@ -7,14 +7,17 @@ If you have an integer or float number `i`, you can make a string out of it with
 
     text = str(2000)
 
-Alternatively, you can use a format string:
+Alternatively, you can insert variables into an f-string (since Python 3.6):
 
-    text = "{}".format(2000)"
+    number = 2000
+    text = f"the year is: {number}"
 
-Format strings pay off very quickly when converting floats:
+Format strings allow you to express floats with a given precision:
 
-    text = "{:4.2f}".format(3.14159)
+    pi = 3.14159
+    text = f"{pi:4.2f}"
 
+Also see [String formatting](string_formatting.md).
 
 ## Converting strings to numbers
 
@@ -38,4 +41,3 @@ The functions `int()`, `float()` and `str()` change the type of the given data. 
     tuple([1, 2, 3])
     dict([('A', 1), ('B', 2)])
     set([1, 2, 2, 3])
-

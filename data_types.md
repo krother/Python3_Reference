@@ -1,12 +1,12 @@
 
-# Overview of Data types in Python
+# Basic Data types in Python
 
 | data type | description | composite | mutable |
 |-----------|-------------|-----------|---------|
 | int       | integer numbers        | no | no |
 | float     | floating-point numbers | no | no |
 | string    | characters             | no | no |
-| bool      | `True` or `False`      | no | no | 
+| bool      | `True` or `False`      | no | no |
 | list      | sequence of items      | yes | yes |
 | tuple     | immutable sequence     | yes | no |
 | dict      | lookup table           | yes | yes |
@@ -35,4 +35,3 @@ The mutable data types are
 * List [1, 2, 2, 3]
 * Dictionary {'name': 'John Smith', 'year': 1990}
 * Set ()
-

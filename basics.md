@@ -1,20 +1,17 @@
 
-# Basics
+# Python Programs
 
-## Python programs
+A Python program is simply a text file that contains Python statements.
 
-A Python program is simply a text file that contains Python statements. 
-The Python interpreter reads the file and executes the statements line by line.
+* All Python programs should have the extension `.py`
+* Only one command per line is allowed
+* The statementsin the file are interpreted line by line
 
-* All program files should have the extension `.py`
-* Only one command per line is allowed.
+To execute a Python program, you run it from the command line with:
 
-### Developing programs on Unix
+    python my_program.py
 
-When developing on Unix, the first line in each Python program should be:
-
-    #!/usr/bin env python3
-
+For those unfamiliar with the command line all Python editors have shortcuts to make running a program simpler.
 
 ## Variables
 

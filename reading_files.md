@@ -45,12 +45,12 @@ This pattern goes through a file line by line (the `for` line). It then chops of
 With the string function `strip()`, you chop off whitespace characters (spaces, newline characters and tabs) from both ends of a string. The code:
 
     text = "  this is text   "
-    s = text.split()
+    s = text.strip()
 
 produces:
 
     print(s)
-    
+
     "this is text"
 
 ## The `str.split()` function
@@ -62,7 +62,7 @@ With the string function `split(x)`, you can divide a string into a list of stri
     print(t)
 
     ["this", "is", "text"]
-    
+
 Both `strip()` and `split()` perfectly complement each other.
 
 More sophisticated ways to read tabular information can be found in the Python modules `csv` and `pandas`.
@@ -81,6 +81,8 @@ A relative directory name starts from the current working directory, often the d
 or go one directory level up, then move into the folder below:
 
     ../data/my_file.txt
+
+### Slashes versus Backslashes
 
 On Windows, getting directory names right is a bit cumbersome, because the directory names easily become long easily. Note that you can use forward slashed to separate between directories. If you use the backslash `\`, you need to write a double backslash `\\` (because `\` is also used for escape sequences like `\n` and `\t`).
 

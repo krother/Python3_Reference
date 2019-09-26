@@ -12,8 +12,8 @@ Here, we will for the first time use a function that is not readily available in
 
 ## Listing files in a directory:
 
-The function 
-    
+The function
+
     y = os.listdir("my_folder")
 
 gives you a list of all files in the directory `my_folder` and stores it in the variable `y`.
@@ -24,7 +24,7 @@ gives you a list of all files in the directory `my_folder` and stores it in the 
 With the os module, you can change the current directory:
 
     import os
-    os.chdir(''..\\python'')
+    os.chdir('../python')
 
 
 ## Check whether a file exists

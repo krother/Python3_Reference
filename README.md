@@ -7,12 +7,12 @@ It is meant to help people learning Python as their first programming language. 
 
 ## Basics
 
-* [Basics](basics.md)
 * [The IPython Shell](ipython_shell.md)
+* [Python Programs](basics.md)
 
 ## Data Types
 
-* [Data types](data_types_in_python.md)
+* [Data Types](data_types.md)
 * [Numbers](numbers.md)
 * [Strings](strings.md)
 * [Tuples](tuples.md)
@@ -60,6 +60,6 @@ This e-book contains contributions by Allegra Via, Kaja Milanowska, Anna Philips
 
 ## License
 
-(c) 2016 Dr. Kristian Rother (krother@academis.eu)
+© 2016 Dr. Kristian Rother (krother@academis.eu)
 
 Distributed under the conditions of the Creative Commons Attribution Share-alike License 4.0

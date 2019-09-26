@@ -1,7 +1,7 @@
 
 # Tuples
 
-A tuple is a sequence of elements that cannot be modified. They are useful to group elements of different type. 
+A tuple is a sequence of elements that cannot be modified. They are useful to group elements of different type.
 
     person = ('Emily', 'Smith', 23)
 
@@ -12,9 +12,9 @@ In contrast to lists, tuples can also be used as **keys** in dictionaries.
 
 Elements of tuples can be indexed in the same way as lists:
 
-   person[0]
-   person[-2]
-   person[1:]
+    person[0]
+    person[-2]
+    person[1:]
 
 
 ## Iterating over tuples
@@ -40,4 +40,3 @@ Tuples can be unpacked to multiple variables:
 It is even possible to swap the value of variables that way:
 
     first, last = last, first
-

@@ -22,10 +22,10 @@ Second, the `sorted()` function returns an iterator without modifying the initia
     for city, year in sorted(cities):
         print(city, year)
 
-
 ## Sorting by a specific column
 
-We can sort by the second column (index 1) with the `itemgetter` module:
+Generally, the **pandas** library is the better choice for sorting by specific columns.
+If you don't want to use any libraries, you can sort by the second column (index 1) with the `itemgetter` module:
 
     from operator import itemgetter
 

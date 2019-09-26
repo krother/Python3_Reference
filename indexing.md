@@ -3,7 +3,7 @@
 
 **Computers and people count differently:**
 
-![indices for humans and computers](images/indexing.png)
+![indices for humans and computers](./images/indexing.png)
 
 Computers treat an address in memory as the *starting point* of a body of data. In the same sense, an *index* in Python always refers to such a starting point, something that is *in between* two objects in memory. We humans in contrast always count the objects themselves.
 
