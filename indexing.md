@@ -9,6 +9,7 @@ Computers treat an address in memory as the *starting point* of a body of data. 
 
 This is why the indices used to slice lists are a bit unintuitive at first, e.g. in:
 
+    :::python
     >>> s = "my fat cat"
     >>> s[3:6]
     'fat'
@@ -19,6 +20,7 @@ The diagram provides a practical model by which you can deduce indices yourself.
 
 Many data types (lists, strings) allow to index items by their position:
 
+    :::python
     s = 'my fat cat'
     s[0]  # first
     s[2]  # third
@@ -30,16 +32,19 @@ Using and index that does not exist causes an `IndexError`.
 
 We can define intervals. This is called **slicing**:
 
+    :::python
     s = 'my fat cat'
     s[3:6]  # -> 'fat'
 
 Slices may be open on either side:
 
+    :::python
     s[3:]  # -> 'fat cat'
     s[:6]  # -> 'my fat'
 
 If you leave both number out, you copy the variable. This is sometimes a neat trick, if you want to manipulate a list, but preserve the original.
 
+    :::python
     d = [1, 2, 3]
     e = d[:]
     d.append(4)
@@ -48,6 +53,7 @@ If you leave both number out, you copy the variable. This is sometimes a neat tr
 
 You can define slices with a step size:
 
+    :::python
     s = 'my fat cat'
     s[1:8:2]  # -> 'yftc'
     s[:8:2]   # -> 'm a '
@@ -55,5 +61,6 @@ You can define slices with a step size:
 
 The step size may even be negative:
 
+    :::python
     s = 'my fat cat'
     s[::-1]  # -> 'tac taf ym'

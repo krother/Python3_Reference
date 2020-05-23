@@ -3,6 +3,7 @@
 
 Text values are called **strings**. In Python, strings are defined by single quotes, double quotes, triple-single or triple-double-quotes:
 
+    :::python
     first = 'Emily'
     first = "Emily"
     first = '''Emily'''
@@ -26,6 +27,7 @@ The operator `+` also works for strings, only that it concatenates the strings. 
 
 With `first = 'Emily'` and `last = 'Smith'` the following three statements have the same result:
 
+    :::python
     name = first + last
     name = first + "Smith"
     name = "Emily" + "Smith"
@@ -35,13 +37,15 @@ With `first = 'Emily'` and `last = 'Smith'` the following three statements have 
 
 Using square brackets, any character of a string can be accessed. This is called **indexing**. The first character has the index `[0]`, the second `[1]` and the fourth has the index `[3]`.
 
+    :::python
     name[0]
     name[3]
 
 With negative numbers, you can access single characters from the end, the index `[-1]` being the last, `[-2]` the second last character and so on:
 
-    name[-1] 
-    name[-2] 
+    :::python
+    name[-1]
+    name[-2]
 
 Note that none of these modify the contents of the string variable.
 
@@ -50,12 +54,13 @@ Note that none of these modify the contents of the string variable.
 
 Substrings can be formed by applying square brackets with two numbers inside separated by a colon (slices). The second number is not included in the substring itself.
 
+    :::python
     name = 'Emily Smith'
     name[0:5]
     name[1:4]
     name[6:11]
-    name[:3] 
-    name[-4:] 
+    name[:3]
+    name[-4:]
 
 
 ## String methods
@@ -66,31 +71,37 @@ Below you find a few of the available methods:
 
 ### Changing case
 
+    :::python
     name = 'Manipulating Strings \n'
     name.upper()
     name.lower()
 
 ### Removing whitespace at both ends
 
+    :::python
     name.strip()
 
 ### Cutting a string into columns
 
+    :::python
     name.split(' ')
 
 ### Searching for substrings
 
+    :::python
     name.find('ing')
 
 The method returns the start index of the match. The result -1 means that no match has been found.
 
 ### Replacing substrings
 
+    :::python
     name.replace('Strings','text')
 
 ### Checking beginning and end of a string
 
 Both of the following functions return a boolean:
 
+    :::python
     name.startswith('Man')
-    name.endswith('ings') 
+    name.endswith('ings')

@@ -7,6 +7,7 @@ Another control flow statement is the **conditional loop** with `while`. While l
 
 A simple usage of while is to count until an exit condition is met. The following loop calculates the sum of all numbers from 1 through 10:
 
+    :::python
     i = 0
     total = 0
     while i < 10:
@@ -21,6 +22,7 @@ With a `while` loop you can perform search operations - although many times the 
 
 The following loop finds the first name starting with an `'E'`:
 
+    :::python
     data = ['Alice', 'Bob', 'Charlie', 'Emily', 'Fred']
     i = 0
     while i < len(data) and not data[i].startswith('E'):
@@ -32,6 +34,7 @@ The following loop finds the first name starting with an `'E'`:
 
 A `while` loop is also useful to let a user stop the program:
 
+    :::python
     number = 0
     while input('press [Enter] to continue or [x] to exit') != 'x':
         number = number +1
@@ -42,6 +45,7 @@ A `while` loop is also useful to let a user stop the program:
 
 With `while` it is possible to build loops that never stop. Most of the time this happens by accident. In the following loop, the instruction to decrease `a` is missing. It runs endlessly:
 
+    :::python
     a = 10
     b = 1
     while a > 0:

@@ -18,16 +18,19 @@ Loops with `for` are useful whenever you want to repeat instructions a known num
 
 With the `range()` function, you can set the number of iterations easily:
 
+    :::python
     for i in range(7):
         print(i)
 
 or using an interval:
 
+    :::python
     for i in range(10, 17):
         print(i)
 
 or backwards:
 
+    :::python
     for i in range(17, 10, -1):
         print(i)
 
@@ -36,6 +39,7 @@ or backwards:
 
 With a string as the sequence, you obtain single characters in each iteration.
 
+    :::python
     for char in 'ABCD':
         print(char)
 
@@ -44,6 +48,7 @@ With a string as the sequence, you obtain single characters in each iteration.
 
 A list iterates simply once through each element:
 
+    :::python
     for elem in [1, 22, 333, 4444, 55555]:
         print(elem)
 
@@ -52,6 +57,7 @@ A list iterates simply once through each element:
 
 With a dictionary, the `for` loop iterates over the keys. Note that the dictionary is inherently unordered. Theoretically, you could get the keys in a different order each time.
 
+    :::python
     pairs = {'Alice': 'Bob', 'Ada': 'Charlie', 'Visual': 'Basic'}
     for key in pairs:
         print(key)
@@ -62,6 +68,7 @@ With a dictionary, the `for` loop iterates over the keys. Note that the dictiona
 
 Sometimes, you want to look up corresponding items from two lists. A straightforward solution is to loop over an index:
 
+    :::python
     names = ['Alice', 'Bob', 'Charlie', 'Delia']
     jobs = ['admin', 'builder', 'cook', 'developer']
 
@@ -70,6 +77,7 @@ Sometimes, you want to look up corresponding items from two lists. A straightfor
 
 However, the *pythonic* solution would be to use `zip`:
 
+    :::python
     for name, job in zip(names, jobs):
         print(name + ' works as a ' + job)
 
@@ -78,6 +86,7 @@ However, the *pythonic* solution would be to use `zip`:
 
 All indented commands after the colon are executed *within* a `for` loop. The first unindented command is executed after the loop finishes.
 
+    :::python
     for i in range(5):
         print('inside')
         print('also inside')

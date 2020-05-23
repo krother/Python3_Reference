@@ -5,6 +5,7 @@
 
 Numerical values without decimal places are called **integers** or **ints**. In Python, integers are a predefined **data type**.
 
+    :::python
     a = 42
 
 
@@ -12,6 +13,7 @@ Numerical values without decimal places are called **integers** or **ints**. In 
 
 Numbers with decimal places are called **floating-point numbers** or **floats**.
 
+    :::python
     b = 42.0
     pi = 3.14159
 
@@ -20,6 +22,7 @@ Numbers with decimal places are called **floating-point numbers** or **floats**.
 
 The arithmetical symbols like `+ - * /` connecting two numbers are called **operators**. In addition to the standard arithmetics a few other operators are available:
 
+    :::python
     a = 7
     b = 4
     c = a - b      
@@ -36,6 +39,7 @@ When you perform a division, the result is always a floating-point number.
 
 Occasionally, seemingly simple floating-point calculations will result in strange results, e.g. instead of `0.3` you might see:
 
+    :::python
     >>> 0.1 + 0.2
     0.30000000000000004
 

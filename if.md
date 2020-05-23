@@ -4,11 +4,13 @@
 
 The `if` statement is used to implement decisions and branching in a program. One or more instructions are only executed if a condition matches:
 
+    :::python
     if name == 'Emily':
         studies = 'Physics'
 
 There must be an `if` block, zero or more `elif`'s and an optional `else` block:
 
+    :::python
     if name == 'Emily':
         studies = 'Physics'
     elif name == 'Maria':
@@ -30,6 +32,7 @@ The next unindented command is executed in any case.
 
 An `if` expression may contain comparison operators like:
 
+    :::python
     a == b
     a != b
     a < b
@@ -39,10 +42,12 @@ An `if` expression may contain comparison operators like:
 
 On lists and strings you can also use:
 
+    :::python
     a in b
 
 Multiple expressions can be combined with boolean logic (`and`, `or`, `not`):
 
+    :::python
     a or b
     a and b
     not a
@@ -53,6 +58,7 @@ Multiple expressions can be combined with boolean logic (`and`, `or`, `not`):
 
 Each variable can be interpreted as a boolean (`True`/`False`) value. All values are treated as `True`, except for:
 
+    :::python
     False
     0
     []
@@ -60,4 +66,3 @@ Each variable can be interpreted as a boolean (`True`/`False`) value. All values
     {}
     set()
     None
-

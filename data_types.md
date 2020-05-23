@@ -1,5 +1,5 @@
 
-# Basic Data types in Python
+# Data Types in Python
 
 | data type | description | composite | mutable |
 |-----------|-------------|-----------|---------|
@@ -34,4 +34,4 @@ The mutable data types are
 
 * List [1, 2, 2, 3]
 * Dictionary {'name': 'John Smith', 'year': 1990}
-* Set ()
+* Set `{1, 2, 3}`

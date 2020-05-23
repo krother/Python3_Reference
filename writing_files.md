@@ -5,6 +5,7 @@
 
 Writing text to files is very similar to reading. One main difference is that you need to add the `'w'` parameter for *writing*.
 
+    :::python
     f = open('my_file.txt','w')
     f.write(text)
     f.close()
@@ -13,6 +14,7 @@ Writing text to files is very similar to reading. One main difference is that yo
 
 If your data is a list of strings, it can be written to a file in one line of code. You only need to take care of adding line breaks at the end of each line:
 
+    :::python
     lines = ['first line\n', 'second line\n']
     open('my_file.txt','w').writelines(lines)
 
@@ -21,6 +23,7 @@ If your data is a list of strings, it can be written to a file in one line of co
 
 A straightforward pattern to write multiple columns to a file uses a `for` loop to create lines with separators and newline characters:
 
+    :::python
     names = ['Emily', 'Bob', 'Charlie']
     ages = [23, 45, 67]
 
@@ -37,6 +40,7 @@ Like with reading, the `csv` and `pandas` offer more sophisticated ways to write
 
 It is possible to append text to an existing file, too.
 
+    :::python
     f = open('my_file.txt','a')
     f.write('line appended at the end\n')
     f.close()
@@ -46,11 +50,13 @@ It is possible to append text to an existing file, too.
 
 When writing data, Python *buffers* the data and writes it to the disk with a delay. The writing occurs after the file has been closed, when Python ends or when the buffer runs full. By using `close()` you make sure the data gets written.
 
+    :::python
     f.close()
 
 ## Writing to a file with a Context Manager
 
 The `with` statement is a **Context Manager** that takes care of closing a file automatically:
 
+    :::python
     with open('my_file', 'w') as f:
         f.write('line of text\n')

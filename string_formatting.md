@@ -3,9 +3,11 @@
 
 Variables and strings can be combined, using **f-strings**. f-strings contain placeholders with variable names and format characters. Here are some examples:
 
+    :::python
     name = 'Roger'
     number = 42
     pi = 3.14159
+
     print(f'Hello {name}')
     print(f'Result: {number:6d}')
     print(f'{number:06d}')
@@ -26,4 +28,5 @@ Part `a` is a variable name (or expression). The optional part `b` contains form
 
 The older method `.format()` (prior to Python 3.6) is sometimes used for string formatting:
 
+    :::python
     print('{:6.3f}/{:6.3f}'.format(a, b))

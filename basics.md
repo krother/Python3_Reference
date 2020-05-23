@@ -9,6 +9,7 @@ A Python program is simply a text file that contains Python statements.
 
 To execute a Python program, you run it from the command line with:
 
+    :::bash
     python my_program.py
 
 For those unfamiliar with the command line all Python editors have shortcuts to make running a program simpler.
@@ -30,6 +31,7 @@ The operator `=` is used in Python to define a variable. A Python statement cont
 
 You may assign to the same variable name twice:
 
+    :::python
     In [1]: emily = 25952
     In [2]: emily = 222
     In [3]: emily
@@ -54,6 +56,7 @@ Some words like `import`, `for` and `in` are called **reserved words**. They hav
 
 You can see the complete list with the commands:
 
+    :::python
     import keyword
     keyword.kwlist
 
@@ -70,6 +73,7 @@ Indentation is a central element of Python syntax. Indentation must not be used 
 
 Comments are lines that are *not* executed. They allow you to document your code to make it easier to read. Also, you can temporarily disable lines of code. There are different ways to write comments:
 
+    :::python
     # this is a one-line comment
 
     """This is also a one-line comment"""

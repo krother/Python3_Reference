@@ -20,12 +20,11 @@ It is meant to help people learning Python as their first programming language. 
 * [Dictionaries](dictionaries.md)
 * [Type Conversions](type_conversions.md)
 * [Indexing](indexing.md)
-* [Sorting](sorting.md)
 
 ## Input and Output
 
 * [Writing to the Screen](print.md)
-* [String formatting](string_formatting.md)
+* [Format Strings](string_formatting.md)
 * [Reading from the Keyboard](input.md)
 
 ## Reading and Writing Files
@@ -44,12 +43,6 @@ It is meant to help people learning Python as their first programming language. 
 
 * [Builtin functions](builtin_functions.md)
 * [Functions](functions.md)
-* [Generators](generators.md)
-
-## Structuring Bigger Programs
-
-* [Modules and packages](modules.md)
-* [Handling Exceptions](exceptions.md)
 * [Introspection](introspection.md)
 
 
