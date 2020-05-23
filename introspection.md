@@ -1,7 +1,7 @@
 
 # Introspection
 
-Introspection is a feature of Python by which you can examine objects (including variables, functions, classes, modules) inside a running Python environment (a program or shell session). 
+Introspection is a feature of Python by which you can examine objects (including variables, functions, classes, modules) inside a running Python environment (a program or shell session).
 
 ## Exploring the namespace
 
@@ -11,6 +11,7 @@ In Python all objects (variables, modules, classes, functions and your main prog
 
 With a string object, you see all the string methods:
 
+    :::python
     s = "Emily"
     print(dir(s))
 
@@ -18,6 +19,7 @@ With a string object, you see all the string methods:
 
 The same works for a module you import:
 
+    :::python
     import time
     print(dir(time))
 
@@ -26,6 +28,7 @@ The same works for a module you import:
 
 You also can view all builtin functions:
 
+    :::python
     print(dir(__builtins__))
 
 
@@ -34,6 +37,7 @@ You also can view all builtin functions:
 
 You can get context-sensitive help to functions, methods and classes with `help()` function.
 
+    :::python
     import time
     print help(time.asctime)
 
